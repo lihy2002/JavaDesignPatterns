@@ -9,4 +9,4 @@ Factory: 工厂模式
 Singleton: 单例模式
 
 
-
+Prorotype: 模板模式
