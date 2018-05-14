@@ -12,6 +12,7 @@
         <module>Factory</module>
         <module>Singleton</module>
       <module>Prototype</module>
+      <module>Proxy</module>
     </modules>
 
     <name>javaDesignPatterns</name>
