@@ -8,7 +8,8 @@ Factory: 工厂模式
 
 Singleton: 单例模式
 
-
 Prorotype: 原型模式
 
 Proxy: 代理模式
+
+Strategy: 策略模式

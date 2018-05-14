@@ -13,6 +13,7 @@
         <module>Singleton</module>
       <module>Prototype</module>
       <module>Proxy</module>
+        <module>Strategy</module>
     </modules>
 
     <name>javaDesignPatterns</name>
