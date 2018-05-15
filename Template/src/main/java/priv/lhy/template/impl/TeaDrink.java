@@ -40,10 +40,6 @@ public class TeaDrink extends DrinksTemplate {
         return this.isAddCondiments;
     }
 
-    public boolean isAddCondiments() {
-        return isAddCondiments;
-    }
-
     public void setAddCondiments(boolean addCondiments) {
         isAddCondiments = addCondiments;
     }
