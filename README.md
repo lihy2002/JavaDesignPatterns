@@ -13,3 +13,5 @@ Prorotype: 原型模式
 Proxy: 代理模式
 
 Strategy: 策略模式
+
+Template: 模板模式
