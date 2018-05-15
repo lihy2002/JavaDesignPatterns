@@ -15,3 +15,5 @@ Proxy: 代理模式
 Strategy: 策略模式
 
 Template: 模板模式
+
+Delegate: 委派模式

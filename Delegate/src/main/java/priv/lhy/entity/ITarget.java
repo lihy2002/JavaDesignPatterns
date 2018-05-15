@@ -1,4 +1,4 @@
-package priv.lhy.delegate;
+package priv.lhy.entity;
 
 /**
  * author : lihy

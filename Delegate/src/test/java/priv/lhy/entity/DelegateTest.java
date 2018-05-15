@@ -1,4 +1,4 @@
-package priv.lhy.delegate;
+package priv.lhy.entity;
 
 import junit.framework.TestCase;
 
