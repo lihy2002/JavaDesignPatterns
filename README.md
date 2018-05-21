@@ -17,3 +17,5 @@ Strategy: 策略模式
 Template: 模板模式
 
 Delegate: 委派模式
+
+Adapter: 适配器模式

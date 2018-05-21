@@ -16,6 +16,7 @@
         <module>Strategy</module>
         <module>Template</module>
       <module>Delegate</module>
+        <module>Adapter</module>
     </modules>
 
     <name>javaDesignPatterns</name>
