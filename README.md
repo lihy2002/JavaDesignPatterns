@@ -19,3 +19,5 @@ Template: 模板模式
 Delegate: 委派模式
 
 Adapter: 适配器模式
+
+Decorator: 装饰器模式

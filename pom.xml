@@ -17,6 +17,7 @@
         <module>Template</module>
       <module>Delegate</module>
         <module>Adapter</module>
+      <module>Decorator</module>
     </modules>
 
     <name>javaDesignPatterns</name>
