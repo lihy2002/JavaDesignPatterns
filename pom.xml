@@ -19,6 +19,7 @@
         <module>Adapter</module>
       <module>Decorator</module>
         <module>Observer</module>
+      <module>Reflect</module>
     </modules>
 
     <name>javaDesignPatterns</name>
