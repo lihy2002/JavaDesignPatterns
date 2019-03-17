@@ -15,7 +15,7 @@ import java.util.Map;
 public class EventListener implements IEventListener{
 
     //监听事件容器,保存所有监听事件
-    Map<Enum, Event> events = new HashMap<>();
+    //Map<Enum, Event> events = new HashMap<>();
 
     /**
      * 注册事件

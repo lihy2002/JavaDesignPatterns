@@ -41,7 +41,8 @@ public class BabySitter2Cglib implements MethodInterceptor {
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("保姆空闲中");
-        Object obj = method.invoke(target, objects);
+        //Object obj = method.invoke(target, objects);
+        Object obj = methodProxy.invokeSuper(o, objects);
         if(method.getName().equals("cleanUp")){
             System.out.println("开始打扫");
         }else if(method.getName().equals("cook")){

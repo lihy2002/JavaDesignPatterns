@@ -7,6 +7,8 @@ import priv.lhy.observer.mouse.MouseEventType;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * author : lihy
@@ -16,6 +18,16 @@ import java.lang.reflect.Proxy;
  * 使用动态代理,可避免代码侵入
  */
 public class MouseProxy implements InvocationHandler {
+
+    //策略模式初始化对应关系
+    private static Map<String, MouseEventType> methodMap = new HashMap<>();
+    static {
+        methodMap.put("onClick", MouseEventType.ON_CLICK);
+        methodMap.put("onDoubleClick", MouseEventType.ON_DOUBLE_CLICK);
+        methodMap.put("onDown", MouseEventType.ON_DOWN);
+        methodMap.put("onUp", MouseEventType.ON_UP);
+        methodMap.put("onMove", MouseEventType.ON_MOVE);
+    }
 
     private IMouse target;
 
@@ -33,8 +45,10 @@ public class MouseProxy implements InvocationHandler {
         if (method.getName().startsWith("on")) {
             MouseEvenCallback callback = new MouseEvenCallback();
             Method callbackMethod = MouseEvenCallback.class.getMethod(method.getName(), Event.class);
-            MouseEventType type = MouseEventType.ON_CLICK;
-            if (method.getName().equals("onClick")) {
+            //MouseEventType type = MouseEventType.ON_CLICK;
+            //策略模式，代替if-else
+            MouseEventType type = methodMap.get(method.getName());
+            /*if (method.getName().equals("onClick")) {
                 type = MouseEventType.ON_CLICK;
             } else if (method.getName().equals("onDoubleClick")) {
                 type = MouseEventType.ON_DOUBLE_CLICK;
@@ -44,7 +58,7 @@ public class MouseProxy implements InvocationHandler {
                 type = MouseEventType.ON_UP;
             } else if (method.getName().equals("onMove")) {
                 type = MouseEventType.ON_MOVE;
-            }
+            }*/
             target.addListener(type, callback, callbackMethod);
             target.trigger(type);
         }

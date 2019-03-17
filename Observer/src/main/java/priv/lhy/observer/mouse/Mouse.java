@@ -12,6 +12,7 @@ public class Mouse extends EventListener{
 
     public void onClick(){
         System.out.println("单击");
+        //这是侵入式的代码，可以用动态代理模式解耦
         this.trigger(MouseEventType.ON_CLICK);
     }
 
