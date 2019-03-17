@@ -18,6 +18,7 @@
       <module>Delegate</module>
         <module>Adapter</module>
       <module>Decorator</module>
+        <module>Observer</module>
     </modules>
 
     <name>javaDesignPatterns</name>
