@@ -21,3 +21,5 @@ Delegate: 委派模式
 Adapter: 适配器模式
 
 Decorator: 装饰器模式
+
+Observer: 观察者模式
